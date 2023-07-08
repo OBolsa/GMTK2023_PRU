@@ -7,5 +7,5 @@ public class PlayerMovementConfigs : ScriptableObject
 {
     public float maxMovementSpeed;
     public float impulseSpeed;
-    public float fallSpeed;
+    public float rotationSpeed;
 }

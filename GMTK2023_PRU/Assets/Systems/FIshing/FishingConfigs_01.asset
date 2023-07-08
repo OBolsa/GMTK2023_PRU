@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 967fdd9d6913086438c5c8537806bbc1, type: 3}
+  m_Name: FishingConfigs_01
+  m_EditorClassIdentifier: 
+  quickTimeEvents:
+  - range: {x: 42, y: 72}
+  - range: {x: 100, y: 120}
+  - range: {x: 178.58238, y: 193.12239}
+  - range: {x: 262.6369, y: 277.1769}
+  - range: {x: 320.8586, y: 360}

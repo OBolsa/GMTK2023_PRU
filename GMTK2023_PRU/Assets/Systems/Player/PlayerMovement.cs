@@ -17,7 +17,7 @@ public class PlayerMovement : MonoBehaviour
         {
             DoPlayerRotation();
 
-            playerRenderer.flipY = rb.velocity.x < 0;
+            playerRenderer.flipX = rb.velocity.x < 0;
         }
     }
 
@@ -40,7 +40,7 @@ public class PlayerMovement : MonoBehaviour
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         Quaternion targetRotation = Quaternion.AngleAxis(angle, Vector3.forward);
 
-        targetRotation *= Quaternion.Euler(0f, 0f, 0f);
+        targetRotation *= Quaternion.Euler(0f, 0f, -90f);
 
         transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, movementConfigs.rotationSpeed);
     }

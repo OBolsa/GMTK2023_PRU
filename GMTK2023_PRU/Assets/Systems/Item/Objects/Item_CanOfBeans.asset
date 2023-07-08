@@ -10,7 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 67215c136af972247bf296c49200a936, type: 3}
-  m_Name: Bota
+  m_Name: Item_CanOfBeans
   m_EditorClassIdentifier: 
-  itemName: Bota
-  itemSprite: {fileID: 21300000, guid: 1daa326d782fcad4c8311b435b51762e, type: 3}
+  itemName: Can of Beans
+  itemSprite: {fileID: 21300000, guid: ce684d6eccc74d9428a078c7de23c06e, type: 3}
+  parameters:
+    Power: 0
+    Attractiveness: 0
+  affinities:
+    taste: 7
+    fun: 0
+    trendyness: 0
+    technology: 0
+    knowledge: 0
+    value: 0

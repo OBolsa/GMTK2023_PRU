@@ -9,23 +9,26 @@ public class UiElement : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 {
     [SerializeField] protected Button button;
 
+    private void Start()
+    {
+        button.onClick.AddListener(Click);
+    }
     public void OnPointerDown(PointerEventData eventData)
     {
-        
+        CursorOver(true);
     }
 
     public void OnPointerUp(PointerEventData eventData)
     {
+        CursorOver(false);
     }
 
-    private void Init()
+    protected virtual void Click()
     {
 
     }
-    /*
-    private void Selection(bool selected)
+
+    protected virtual void CursorOver(bool selected)
     {
-        cgSelection.DOFade(selected ? 1 : 0, .25f);
     }
-    */
 }

@@ -6,12 +6,18 @@ using UnityEngine;
 public class Fish : ScriptableObject
 {
     [Header("Defaults")]
-    public string fishName;
-    public int value;
+    public string preyName;
+    public string preyCategory;
+    [TextArea(0, 5)] public string preyDescription;
+    public Sprite preyIcon;
+    public Item favoriteBait;
+    public int catchesAmount;
 
     [Header("Settings")]
+    public int value;
+    public QuickTimeEvent quickTimeEvent;
     public FishParameters parameters;
-    public BaitAffinity baitAffinities;
+    public List<BaitAffinityEntry> baitAffinitiesList = new List<BaitAffinityEntry>();
 
     [System.Serializable]
     public struct FishParameters
@@ -20,23 +26,11 @@ public class Fish : ScriptableObject
         public float Resistance; // Quanto que é reduzido do valor quando se acerta
         public float Agressivity; // Quanto que perde quando erra
     }
+}
 
-    [System.Serializable]
-    public struct BaitAffinity
-    {
-        public BaitAffinityType taste;
-        public BaitAffinityType fun;
-        public BaitAffinityType trendyness;
-        public BaitAffinityType technology;
-        public BaitAffinityType knowledge;
-        public BaitAffinityType value;
-    }
-
-    public enum BaitAffinityType
-    {
-        Null = 0,
-        Low = 1,
-        Medium = 3,
-        High = 7
-    }
+[System.Serializable]
+public struct BaitAffinityEntry
+{
+    public BaitAffinity affinity;
+    public BaitAffinityAmount typeOfAffinity;
 }

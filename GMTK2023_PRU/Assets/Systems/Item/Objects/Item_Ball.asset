@@ -13,14 +13,12 @@ MonoBehaviour:
   m_Name: Item_Ball
   m_EditorClassIdentifier: 
   itemName: Ball
-  itemSprite: {fileID: 21300000, guid: 1daa326d782fcad4c8311b435b51762e, type: 3}
+  category: 
+  itemDescription: 
+  itemIcon: {fileID: 21300000, guid: 1daa326d782fcad4c8311b435b51762e, type: 3}
   parameters:
     Power: 0
     Attractiveness: 0
   affinities:
-    taste: 0
-    fun: 0
-    trendyness: 0
-    technology: 0
-    knowledge: 0
-    value: 0
+  - affinity: {fileID: 11400000, guid: 6d458e86e4d649d46a22f400ff59710f, type: 2}
+    typeOfAffinity: 1

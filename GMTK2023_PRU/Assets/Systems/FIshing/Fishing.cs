@@ -10,7 +10,8 @@ public class Fishing : MonoBehaviour
     public GameObject defaultRadial;
     public Transform pointer;
     public FishingBar bar;
-    public FishingConfigs configs;
+    public Fish preyFishing;
+    public Item baitUsed;
     private List<GameObject> greens = new List<GameObject>();
     private Vector2[] ranges;
     private int currentRange = 0;
@@ -18,7 +19,7 @@ public class Fishing : MonoBehaviour
 
     //-- PointerRotation
     [Header("Pointer Configs")]
-    public float pointerSpeed;
+    public float pointerBaseSpeed;
     private float pointerZRotation = 0;
     private float CurrentRotation() => Mathf.Abs(360 - pointer.localEulerAngles.z);
 
@@ -40,14 +41,21 @@ public class Fishing : MonoBehaviour
 
     public void Correct()
     {
+        float amountToIncrease = FishingManager.Instance.defaultIncreaseAmount - (preyFishing.parameters.Resistance / 100) * FishingManager.Instance.defaultIncreaseAmount;
+
+        bar.IncreaseBar(amountToIncrease);
         greens[currentRange].gameObject.SetActive(false); // Desliguei a indicação visual para mostrar que ele já acertou esse. No UpdateRange() eu ligo todos de novo.
+
         Debug.Log("ACERTEI MIZERAVI");
     }
 
     public void Incorrect()
     {
+        float amountToDecrease = FishingManager.Instance.defaultIncreaseAmount + (preyFishing.parameters.Agressivity);
+
+        bar.DecreaseBar(amountToDecrease);
+
         Debug.Log("TURURU");
-        // Si fufu irmão. KKKKK K K KK K K K
     }
 
     private void CheckQuickTimeEvent()
@@ -92,20 +100,21 @@ public class Fishing : MonoBehaviour
 
     private void DoPointerRotation()
     {
-        pointerZRotation += pointerSpeed * Time.deltaTime;
+        float speed = FishingManager.Instance.pointerDefaultSpeed + Mathf.Pow(preyFishing.parameters.Difficulty, FishingManager.Instance.powPointerSpeedValue);
+
+        pointerZRotation += speed * Time.deltaTime;
         pointer.rotation = Quaternion.Euler(0f, 0f, -pointerZRotation);
     }
-
 
     [ContextMenu("Setup")]
     public void Setup()
     {
         CleanGreens();
 
-        for (int i = 0; i < configs.quickTimeEvents.Count; i++)
+        for (int i = 0; i < preyFishing.quickTimeEvent.Events.Count; i++)
         {
-            float min = configs.quickTimeEvents[i].range.x;
-            float max = configs.quickTimeEvents[i].range.y;
+            float min = preyFishing.quickTimeEvent.Events[i].range.x;
+            float max = preyFishing.quickTimeEvent.Events[i].range.y;
 
             GameObject obj = Instantiate(defaultRadial, transform);
 
@@ -116,14 +125,17 @@ public class Fishing : MonoBehaviour
         }
 
         SetupRanges();
+        bar.decreasePerTime = preyFishing.parameters.Agressivity * FishingManager.Instance.barDecreaseAgressivityFactor;
+        bar.canDecrease = true;
     }
+
     private void SetupRanges()
     {
-        ranges = new Vector2[configs.quickTimeEvents.Count];
+        ranges = new Vector2[preyFishing.quickTimeEvent.Events.Count];
 
         for (int i = 0; i < ranges.Length; i++)
         {
-            ranges[i] = configs.quickTimeEvents[i].range;
+            ranges[i] = preyFishing.quickTimeEvent.Events[i].range;
         }
     }
 

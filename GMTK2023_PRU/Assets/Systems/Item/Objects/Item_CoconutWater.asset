@@ -13,14 +13,16 @@ MonoBehaviour:
   m_Name: Item_CoconutWater
   m_EditorClassIdentifier: 
   itemName: 
-  itemSprite: {fileID: 0}
+  category: 
+  itemDescription: 
+  itemIcon: {fileID: 0}
   parameters:
     Power: 0
-    Attractiveness: 0
+    Attractiveness: 0.5
   affinities:
-    taste: 0
-    fun: 0
-    trendyness: 0
-    technology: 0
-    knowledge: 0
-    value: 0
+  - affinity: {fileID: 11400000, guid: 51e3411f170a0f34d98b84be59dd1864, type: 2}
+    typeOfAffinity: 7
+  - affinity: {fileID: 11400000, guid: 820a0058fd584ee45a51c60883c77e85, type: 2}
+    typeOfAffinity: 7
+  - affinity: {fileID: 11400000, guid: f311a4262d16d454a8b9b7a4e896dc83, type: 2}
+    typeOfAffinity: 3

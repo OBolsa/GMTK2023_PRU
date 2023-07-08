@@ -18,17 +18,11 @@ MonoBehaviour:
   itemIcon: {fileID: 0}
   parameters:
     Power: 0
-    Attractiveness: 90
+    Attractiveness: 0.9
   affinities:
-  - affinity: {fileID: 0}
-    typeOfAffinity: 0
-  - affinity: {fileID: 0}
-    typeOfAffinity: 0
-  - affinity: {fileID: 0}
-    typeOfAffinity: 0
-  - affinity: {fileID: 0}
-    typeOfAffinity: 0
-  - affinity: {fileID: 0}
-    typeOfAffinity: 0
-  - affinity: {fileID: 0}
-    typeOfAffinity: 0
+  - affinity: {fileID: 11400000, guid: 820a0058fd584ee45a51c60883c77e85, type: 2}
+    typeOfAffinity: 7
+  - affinity: {fileID: 11400000, guid: d274cd1cd5f919e43bc2d99f59dee367, type: 2}
+    typeOfAffinity: 7
+  - affinity: {fileID: 11400000, guid: f311a4262d16d454a8b9b7a4e896dc83, type: 2}
+    typeOfAffinity: 3

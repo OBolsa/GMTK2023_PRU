@@ -13,14 +13,16 @@ MonoBehaviour:
   m_Name: Item_BestSeller
   m_EditorClassIdentifier: 
   itemName: 
-  itemSprite: {fileID: 0}
+  category: 
+  itemDescription: 
+  itemIcon: {fileID: 0}
   parameters:
     Power: 0
-    Attractiveness: 0
+    Attractiveness: 0.9
   affinities:
-    taste: 0
-    fun: 0
-    trendyness: 0
-    technology: 0
-    knowledge: 0
-    value: 0
+  - affinity: {fileID: 11400000, guid: 6d458e86e4d649d46a22f400ff59710f, type: 2}
+    typeOfAffinity: 1
+  - affinity: {fileID: 11400000, guid: 820a0058fd584ee45a51c60883c77e85, type: 2}
+    typeOfAffinity: 7
+  - affinity: {fileID: 11400000, guid: 706224d3d52e89d448b69ba56a3fc8e4, type: 2}
+    typeOfAffinity: 3

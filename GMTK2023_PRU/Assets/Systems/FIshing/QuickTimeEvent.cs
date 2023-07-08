@@ -5,9 +5,9 @@ using UnityEngine;
 using UnityEngine.UI;
 
 [CreateAssetMenu(menuName = "Fish/Configs", fileName = "FishingConfigs_")]
-public class FishingConfigs : ScriptableObject
+public class QuickTimeEvent : ScriptableObject
 {
-    public List<FishingQTE> quickTimeEvents = new List<FishingQTE>();
+    public List<FishingQTE> Events = new List<FishingQTE>();
 
     [System.Serializable]
     public struct FishingQTE

@@ -12,16 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad5aac68e7290944c86e8269cab6358f, type: 3}
   m_Name: Fish_PoliceOfficer
   m_EditorClassIdentifier: 
-  fishName: 
+  preyName: 
+  preyDescription: 
+  preyCategory: 
+  preyIcon: {fileID: -1918716819, guid: eae594a58ab5b4e42a581f3b26f26c02, type: 3}
+  favoriteBait: {fileID: 0}
+  catchesAmount: 0
   value: 0
   parameters:
     Difficulty: 0
     Resistance: 0
     Agressivity: 0
-  baitAffinities:
-    taste: 0
-    fun: 1
-    trendyness: 3
-    technology: 7
-    knowledge: 0
-    value: 0
+  baitAffinitiesList: []

@@ -9,12 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 967fdd9d6913086438c5c8537806bbc1, type: 3}
-  m_Name: FishingConfigs_01
+  m_Script: {fileID: 11500000, guid: b1a37dd6d756ff14598494472d21013c, type: 3}
+  m_Name: Trendyness
   m_EditorClassIdentifier: 
-  quickTimeEvents:
-  - range: {x: 42, y: 72}
-  - range: {x: 100, y: 120}
-  - range: {x: 178.58238, y: 193.12239}
-  - range: {x: 262.6369, y: 277.1769}
-  - range: {x: 320.8586, y: 360}
+  affinityName: 
+  color: {r: 1, g: 1, b: 1, a: 0}
+  icon: {fileID: 0}

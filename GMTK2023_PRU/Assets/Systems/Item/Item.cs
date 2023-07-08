@@ -7,11 +7,13 @@ public class Item : ScriptableObject
 {
     [Header("Defaults")]
     public string itemName;
-    public Sprite itemSprite;
+    public string category;
+    [TextArea(0, 5)] public string itemDescription;
+    public Sprite itemIcon;
 
     [Header("Settings")]
     public ItemParameters parameters;
-    public Fish.BaitAffinity affinities;
+    public List<BaitAffinityEntry> affinities = new List<BaitAffinityEntry>();
 
     [System.Serializable]
     public struct ItemParameters

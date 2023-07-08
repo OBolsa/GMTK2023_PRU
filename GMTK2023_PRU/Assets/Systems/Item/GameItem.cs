@@ -40,9 +40,9 @@ public class GameItem : DynamicItem, IInteractable
 
     public void UpdateItem()
     {
-        if (lastSprite != item.itemSprite)
+        if (lastSprite != item.itemIcon)
         {
-            spriteRenderer.sprite = item.itemSprite;
+            spriteRenderer.sprite = item.itemIcon;
         }
     }
 }

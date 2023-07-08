@@ -164,7 +164,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toolTip: {fileID: 0}
-  item: {fileID: 11400000, guid: 3ba700864e019514a855bc265fbb39e5, type: 2}
+  item: {fileID: 11400000, guid: b5134d2f403cd1d4685c063d1c0f9f0b, type: 2}
   spriteRenderer: {fileID: 666742347416681192}
 --- !u!114 &170855722489714099
 MonoBehaviour:
@@ -179,7 +179,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   offset: {x: 0, y: 0, z: 0}
-  isInteractable: 0
+  isInteractable: 1
   itemText: {fileID: 0}
 --- !u!1 &666742347416681193
 GameObject:
@@ -283,7 +283,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &8231945856344603023
 RectTransform:
   m_ObjectHideFlags: 0

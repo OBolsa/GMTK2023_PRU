@@ -13,5 +13,7 @@ MonoBehaviour:
   m_Name: FishingConfigs_02
   m_EditorClassIdentifier: 
   quickTimeEvents:
-  - range: {x: 42, y: 121.20273}
-  - range: {x: 212.76, y: 236.8651}
+  - range: {x: 0, y: 45}
+  - range: {x: 90, y: 135}
+  - range: {x: 180, y: 225}
+  - range: {x: 270, y: 315}

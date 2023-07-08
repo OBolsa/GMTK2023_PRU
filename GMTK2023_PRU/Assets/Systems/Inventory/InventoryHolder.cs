@@ -12,7 +12,7 @@ public class InventoryHolder : MonoBehaviour
 
         if (nearbyItem != null && Input.GetKeyDown(KeyCode.E))
         {
-            inventory.AddItem(nearbyItem.item);
+            inventory.AddItem(nearbyItem.item, 1);
             ItemManager.Instance.ReturnItem(nearbyItem);
             nearbyItem.gameObject.SetActive(false);
         }

@@ -12,15 +12,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad5aac68e7290944c86e8269cab6358f, type: 3}
   m_Name: Fish_Drunkard
   m_EditorClassIdentifier: 
-  preyName: 
+  preyName: Drunkard
+  preyCategory: Civillian
   preyDescription: 
-  preyCategory: 
   preyIcon: {fileID: -1956601970, guid: eae594a58ab5b4e42a581f3b26f26c02, type: 3}
   favoriteBait: {fileID: 0}
-  catchesAmount: 0
+  amountCatched: 0
+  amountCurrent: 999
   value: 0
+  quickTimeEvent: {fileID: 11400000, guid: 5377394d850bc1c40b6d3fa8ecf654a8, type: 2}
   parameters:
-    Difficulty: 0
-    Resistance: 0
-    Agressivity: 0
-  baitAffinitiesList: []
+    Difficulty: 17
+    Resistance: 26
+    Agressivity: 27
+  baitAffinitiesList:
+  - affinity: {fileID: 11400000, guid: 51e3411f170a0f34d98b84be59dd1864, type: 2}
+    typeOfAffinity: 3
+  - affinity: {fileID: 11400000, guid: 6d458e86e4d649d46a22f400ff59710f, type: 2}
+    typeOfAffinity: 7
+  - affinity: {fileID: 11400000, guid: 820a0058fd584ee45a51c60883c77e85, type: 2}
+    typeOfAffinity: 1
+  - affinity: {fileID: 11400000, guid: d274cd1cd5f919e43bc2d99f59dee367, type: 2}
+    typeOfAffinity: 1
+  - affinity: {fileID: 11400000, guid: 706224d3d52e89d448b69ba56a3fc8e4, type: 2}
+    typeOfAffinity: 1
+  - affinity: {fileID: 11400000, guid: f311a4262d16d454a8b9b7a4e896dc83, type: 2}
+    typeOfAffinity: 7

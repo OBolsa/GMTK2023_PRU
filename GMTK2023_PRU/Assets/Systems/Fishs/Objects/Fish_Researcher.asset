@@ -12,16 +12,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad5aac68e7290944c86e8269cab6358f, type: 3}
   m_Name: Fish_Researcher
   m_EditorClassIdentifier: 
-  fishName: 
+  preyName: Researcher
+  preyCategory: Worker
+  preyDescription: 
+  preyIcon: {fileID: -1588336875, guid: 5fbe2df71a073c74b9d8ad43e5aa356d, type: 3}
+  favoriteBait: {fileID: 0}
+  amountCatched: 0
+  amountCurrent: 999
   value: 0
+  quickTimeEvent: {fileID: 11400000, guid: bfcf0f464f427da4eb1c45b5a84d86dc, type: 2}
   parameters:
-    Difficulty: 0
-    Resistance: 0
-    Agressivity: 0
-  baitAffinities:
-    taste: 0
-    fun: 1
-    trendyness: 3
-    technology: 7
-    knowledge: 0
-    value: 0
+    Difficulty: 30
+    Resistance: 27
+    Agressivity: 13
+  baitAffinitiesList:
+  - affinity: {fileID: 11400000, guid: 51e3411f170a0f34d98b84be59dd1864, type: 2}
+    typeOfAffinity: 1
+  - affinity: {fileID: 11400000, guid: 6d458e86e4d649d46a22f400ff59710f, type: 2}
+    typeOfAffinity: 1
+  - affinity: {fileID: 11400000, guid: 820a0058fd584ee45a51c60883c77e85, type: 2}
+    typeOfAffinity: 1
+  - affinity: {fileID: 11400000, guid: d274cd1cd5f919e43bc2d99f59dee367, type: 2}
+    typeOfAffinity: 3
+  - affinity: {fileID: 11400000, guid: 706224d3d52e89d448b69ba56a3fc8e4, type: 2}
+    typeOfAffinity: 7
+  - affinity: {fileID: 11400000, guid: f311a4262d16d454a8b9b7a4e896dc83, type: 2}
+    typeOfAffinity: 3

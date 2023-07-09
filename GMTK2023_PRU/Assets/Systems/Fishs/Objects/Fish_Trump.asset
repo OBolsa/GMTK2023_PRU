@@ -12,16 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad5aac68e7290944c86e8269cab6358f, type: 3}
   m_Name: Fish_Trump
   m_EditorClassIdentifier: 
-  fishName: 
+  preyName: Trump
+  preyCategory: Celebrity
+  preyDescription: 
+  preyIcon: {fileID: -932576453, guid: 5fbe2df71a073c74b9d8ad43e5aa356d, type: 3}
+  favoriteBait: {fileID: 11400000, guid: 61a3ea2bfdd6b3544ab7875e5f9600cb, type: 2}
+  amountCatched: 0
+  amountCurrent: 999
   value: 0
+  quickTimeEvent: {fileID: 11400000, guid: 71784852a7e99da4c8b52e29e8302ff4, type: 2}
   parameters:
-    Difficulty: 0
-    Resistance: 0
-    Agressivity: 0
-  baitAffinities:
-    taste: 0
-    fun: 1
-    trendyness: 3
-    technology: 7
-    knowledge: 0
-    value: 0
+    Difficulty: 40
+    Resistance: 40
+    Agressivity: 40
+  baitAffinitiesList: []

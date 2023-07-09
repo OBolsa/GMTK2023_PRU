@@ -4,19 +4,26 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using DG.Tweening;
+using TMPro;
 
 public class UiInventoryItem : UiElement
 {
-    [SerializeField] Menu_Inventory menuInventory;
+    [Header("Inventory Item")]
+    Menu_Inventory menuInventory;
+    [SerializeField] Item associatedItem;
+    [SerializeField] Image itemImage;
+    [SerializeField] TextMeshProUGUI textQty;
 
-    private void Init(Menu_Inventory menu)
+    public void Init(Menu_Inventory menu, Item item)
     {
         menuInventory = menu;
-        button.onClick.AddListener(SelectItem);
+        associatedItem = item;
+        itemImage.sprite = item.itemIcon;
+        textQty.text = GameplayManager.instance.ScriptableManager.playerInventory.items.Find(it => it.itemInSlot == item).quantity.ToString();
     }
-
-    private void SelectItem()
+    protected override void Click()
     {
-        menuInventory.UpdateSelectedItem();
+        base.Click();
+        menuInventory.UpdateSelectedItem(associatedItem);
     }
 }

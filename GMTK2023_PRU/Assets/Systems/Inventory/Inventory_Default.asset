@@ -12,4 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4f4c9d633d6295429f883f60688099e, type: 3}
   m_Name: Inventory_Default
   m_EditorClassIdentifier: 
-  items: []
+  items:
+  - itemInSlot: {fileID: 11400000, guid: 796abc9d7ffe56e499b80d36ccb16384, type: 2}
+    quantity: 120

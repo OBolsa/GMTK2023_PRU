@@ -5,11 +5,12 @@ using UnityEngine;
 public class Inventory : ScriptableObject
 {
     public List<InventorySlot> items = new List<InventorySlot>();
-
+    /*
     private void OnEnable()
     {
         items.Clear();
     }
+    */
 
     public void AddItem(Item item, int quantity)
     {

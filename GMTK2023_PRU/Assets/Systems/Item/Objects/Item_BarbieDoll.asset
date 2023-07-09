@@ -13,14 +13,18 @@ MonoBehaviour:
   m_Name: Item_BarbieDoll
   m_EditorClassIdentifier: 
   itemName: Barbie Doll
-  itemSprite: {fileID: 21300000, guid: 1daa326d782fcad4c8311b435b51762e, type: 3}
+  category: Beach
+  itemDescription: 
+  itemIcon: {fileID: 0}
   parameters:
     Power: 0
-    Attractiveness: 0
+    Attractiveness: 0.5
   affinities:
-    taste: 0
-    fun: 7
-    trendyness: 0
-    technology: 0
-    knowledge: 0
-    value: 0
+  - affinity: {fileID: 11400000, guid: 6d458e86e4d649d46a22f400ff59710f, type: 2}
+    typeOfAffinity: 7
+  - affinity: {fileID: 11400000, guid: 820a0058fd584ee45a51c60883c77e85, type: 2}
+    typeOfAffinity: 1
+  - affinity: {fileID: 11400000, guid: f311a4262d16d454a8b9b7a4e896dc83, type: 2}
+    typeOfAffinity: 7
+  - affinity: {fileID: 0}
+    typeOfAffinity: 0

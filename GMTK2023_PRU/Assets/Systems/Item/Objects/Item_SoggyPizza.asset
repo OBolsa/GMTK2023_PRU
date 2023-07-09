@@ -13,14 +13,14 @@ MonoBehaviour:
   m_Name: Item_SoggyPizza
   m_EditorClassIdentifier: 
   itemName: Soggy Pizza
-  itemSprite: {fileID: 21300000, guid: 1daa326d782fcad4c8311b435b51762e, type: 3}
+  category: Downtown River
+  itemDescription: 
+  itemIcon: {fileID: 0}
   parameters:
     Power: 0
-    Attractiveness: 0
+    Attractiveness: 0.7
   affinities:
-    taste: 7
-    fun: 3
-    trendyness: 0
-    technology: 0
-    knowledge: 0
-    value: 0
+  - affinity: {fileID: 11400000, guid: 51e3411f170a0f34d98b84be59dd1864, type: 2}
+    typeOfAffinity: 7
+  - affinity: {fileID: 11400000, guid: 6d458e86e4d649d46a22f400ff59710f, type: 2}
+    typeOfAffinity: 3

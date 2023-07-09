@@ -12,15 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67215c136af972247bf296c49200a936, type: 3}
   m_Name: Item_SubmarineTicket
   m_EditorClassIdentifier: 
-  itemName: 
-  itemSprite: {fileID: 0}
+  itemName: Submarine Ticket
+  category: Downtown River
+  itemDescription: 
+  itemIcon: {fileID: 0}
   parameters:
     Power: 0
-    Attractiveness: 0
+    Attractiveness: 0.7
   affinities:
-    taste: 0
-    fun: 0
-    trendyness: 0
-    technology: 0
-    knowledge: 0
-    value: 0
+  - affinity: {fileID: 11400000, guid: 6d458e86e4d649d46a22f400ff59710f, type: 2}
+    typeOfAffinity: 7
+  - affinity: {fileID: 11400000, guid: d274cd1cd5f919e43bc2d99f59dee367, type: 2}
+    typeOfAffinity: 1
+  - affinity: {fileID: 11400000, guid: f311a4262d16d454a8b9b7a4e896dc83, type: 2}
+    typeOfAffinity: 7

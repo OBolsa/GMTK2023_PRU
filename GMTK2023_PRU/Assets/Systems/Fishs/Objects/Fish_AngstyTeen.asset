@@ -12,12 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad5aac68e7290944c86e8269cab6358f, type: 3}
   m_Name: Fish_AngstyTeen
   m_EditorClassIdentifier: 
-  preyName: 
-  preyCategory: 
+  preyName: Angsty Teen
+  preyCategory: Kid
   preyDescription: 
   preyIcon: {fileID: 1006309567, guid: eae594a58ab5b4e42a581f3b26f26c02, type: 3}
   favoriteBait: {fileID: 0}
-  catchesAmount: 0
+  amountCatched: 0
+  amountCurrent: 999
   value: 0
   quickTimeEvent: {fileID: 11400000, guid: b1683a10bae525d47b5c30f6d407c8b6, type: 2}
   parameters:

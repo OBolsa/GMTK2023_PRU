@@ -5,27 +5,31 @@ using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using DG.Tweening;
 
-public class UiElement : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
+public class UiElement : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     [SerializeField] protected Button button;
 
-    public void OnPointerDown(PointerEventData eventData)
+    private void Start()
     {
-        
+        button.onClick.AddListener(Click);
     }
 
-    public void OnPointerUp(PointerEventData eventData)
-    {
-    }
-
-    private void Init()
+    protected virtual void Click()
     {
 
     }
-    /*
-    private void Selection(bool selected)
+
+    protected virtual void CursorOver(bool selected)
     {
-        cgSelection.DOFade(selected ? 1 : 0, .25f);
     }
-    */
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        CursorOver(false);
+    }
+
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        CursorOver(true);
+    }
 }

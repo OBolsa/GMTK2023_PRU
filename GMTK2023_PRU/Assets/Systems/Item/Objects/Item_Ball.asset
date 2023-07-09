@@ -21,4 +21,8 @@ MonoBehaviour:
     Attractiveness: 0
   affinities:
   - affinity: {fileID: 11400000, guid: 6d458e86e4d649d46a22f400ff59710f, type: 2}
+    typeOfAffinity: 7
+  - affinity: {fileID: 11400000, guid: 706224d3d52e89d448b69ba56a3fc8e4, type: 2}
+    typeOfAffinity: 3
+  - affinity: {fileID: 11400000, guid: 51e3411f170a0f34d98b84be59dd1864, type: 2}
     typeOfAffinity: 1

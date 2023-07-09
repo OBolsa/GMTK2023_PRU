@@ -11,7 +11,8 @@ public class Fish : ScriptableObject
     [TextArea(0, 5)] public string preyDescription;
     public Sprite preyIcon;
     public Item favoriteBait;
-    public int catchesAmount;
+    public int amountCatched;
+    public int amountCurrent;
 
     [Header("Settings")]
     public int value;
@@ -29,8 +30,9 @@ public class Fish : ScriptableObject
 }
 
 [System.Serializable]
-public struct BaitAffinityEntry
+public class BaitAffinityEntry
 {
     public BaitAffinity affinity;
     public BaitAffinityAmount typeOfAffinity;
+
 }

@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1a37dd6d756ff14598494472d21013c, type: 3}
   m_Name: Taste
   m_EditorClassIdentifier: 
-  affinityName: 
-  color: {r: 1, g: 1, b: 1, a: 0}
-  icon: {fileID: 0}
+  affinityName: Taste
+  color: {r: 1, g: 0.5882353, b: 0.5882353, a: 1}
+  icon: {fileID: 21300000, guid: 70632ddfe8e71b04b8f90ef7e29a9e98, type: 3}

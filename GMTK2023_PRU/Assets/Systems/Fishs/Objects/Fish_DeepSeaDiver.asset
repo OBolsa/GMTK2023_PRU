@@ -12,12 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad5aac68e7290944c86e8269cab6358f, type: 3}
   m_Name: Fish_DeepSeaDiver
   m_EditorClassIdentifier: 
-  preyName: 
-  preyCategory: 
+  preyName: Deep Sea Diver
+  preyCategory: Civillian
   preyDescription: 
   preyIcon: {fileID: 780684722, guid: 5fbe2df71a073c74b9d8ad43e5aa356d, type: 3}
   favoriteBait: {fileID: 0}
-  catchesAmount: 0
+  amountCatched: 0
+  amountCurrent: 999
   value: 0
   quickTimeEvent: {fileID: 11400000, guid: a141637b16d5708418ccaa9906727620, type: 2}
   parameters:

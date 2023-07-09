@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Shader Graphs_WaterSurface
+  m_Name: Shader Graphs_WaterPlane
   m_Shader: {fileID: -6465566751694194690, guid: df354d0ab7239b346b1b66b7e0c53d39,
     type: 3}
   m_ValidKeywords: []
@@ -52,16 +52,16 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Alpha: 0.155
-    - _Normal: 0.581
+    - _Alpha: 0.75
+    - _Normal: 0.458
     - _Occlusion: 1
     - _QueueControl: 0
     - _QueueOffset: -50
-    - _Smoothness: 0.822
+    - _Smoothness: 0.254
     m_Colors:
     - _Distortion: {r: 1, g: 1.1, b: 0, a: 0}
-    - _TileSpeed: {r: 0.1, g: -0.2, b: 0, a: 0}
-    - _Tiling: {r: 10, g: 30, b: 0, a: 0}
-    - _Tint: {r: 0.25, g: 0.6941277, b: 1, a: 1}
+    - _TileSpeed: {r: 0, g: 0.1, b: 0, a: 0}
+    - _Tiling: {r: 1, g: 1, b: 0, a: 0}
+    - _Tint: {r: 0.25098038, g: 0.84518135, b: 1, a: 1}
     - _Warping: {r: 1, g: 1, b: 0, a: 0}
   m_BuildTextureStacks: []

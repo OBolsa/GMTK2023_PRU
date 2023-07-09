@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: eae594a58ab5b4e42a581f3b26f26c02
+guid: 82a98af8038e82d449900c27a41e7e4d
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 376.5
+  spritePixelsToUnits: 439
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -117,169 +117,190 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sheetnpcs1_0
+      name: Areia_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 753
-        width: 654
-        height: 753
-      alignment: 9
-      pivot: {x: 0.5, y: 0.7}
+        y: 878
+        width: 439
+        height: 439
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3716ffa701ce0454bb97a2cd49d724d8
-      internalID: -1325827660
+      spriteID: d393a4445a1030d4583fedc7a043a4bb
+      internalID: 1294400639
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sheetnpcs1_1
+      name: Areia_1
       rect:
         serializedVersion: 2
-        x: 654
-        y: 753
-        width: 654
-        height: 753
-      alignment: 9
-      pivot: {x: 0.5, y: 0.7}
+        x: 439
+        y: 878
+        width: 439
+        height: 439
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5b1df13c07beecd48b2bbda089ef9663
-      internalID: -2097013655
+      spriteID: ef8597f4f743aee42bba7039ad41c21e
+      internalID: 1081943249
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sheetnpcs1_2
+      name: Areia_2
       rect:
         serializedVersion: 2
-        x: 1308
-        y: 753
-        width: 654
-        height: 753
-      alignment: 9
-      pivot: {x: 0.5, y: 0.7}
+        x: 0
+        y: 439
+        width: 439
+        height: 439
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0788188d6f2424041b010738769f1f88
-      internalID: 2077099476
+      spriteID: 059afb5d7d128ed43a98947d988af87b
+      internalID: 229979985
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sheetnpcs1_3
+      name: Areia_3
       rect:
         serializedVersion: 2
-        x: 1962
-        y: 753
-        width: 654
-        height: 753
-      alignment: 9
-      pivot: {x: 0.5, y: 0.7}
+        x: 439
+        y: 439
+        width: 439
+        height: 439
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0239a928aae8bbe4799f6f974a576aca
-      internalID: -1503747787
+      spriteID: 1586ecd974e93fb4cb08966fa55b8e99
+      internalID: -1641185396
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sheetnpcs1_4
+      name: Areia_4
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 654
-        height: 753
-      alignment: 9
-      pivot: {x: 0.5, y: 0.7}
+        width: 439
+        height: 439
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 24c70b66d3be8924bbbbc87e40dd3d6d
-      internalID: -2006594044
+      spriteID: 1188b791c86ec754e964913ad3ff944e
+      internalID: -416600550
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sheetnpcs1_5
+      name: Areia_5
       rect:
         serializedVersion: 2
-        x: 654
+        x: 439
         y: 0
-        width: 654
-        height: 753
-      alignment: 9
-      pivot: {x: 0.5, y: 0.7}
+        width: 439
+        height: 439
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c452477b46edcbe47bd9b805ece11873
-      internalID: -1918716819
+      spriteID: 72addc25040f4bd4f8a573c07276c63a
+      internalID: 1579938839
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sheetnpcs1_6
+      name: Areia_6
       rect:
         serializedVersion: 2
-        x: 1308
-        y: 0
-        width: 654
-        height: 753
-      alignment: 9
-      pivot: {x: 0.5, y: 0.7}
+        x: 878
+        y: 878
+        width: 438
+        height: 439
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3560fce1fa92848458e9f2567949c1ea
-      internalID: -1956601970
+      spriteID: 48cf220b7a8c2eb44a065359ac1c93ee
+      internalID: 404733365
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sheetnpcs1_7
+      name: Areia_7
       rect:
         serializedVersion: 2
-        x: 1962
-        y: 0
-        width: 654
-        height: 753
-      alignment: 9
-      pivot: {x: 0.5, y: 0.7}
+        x: 878
+        y: 440
+        width: 438
+        height: 438
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d29a18b9ca40adf4190fb369fc4a5d95
-      internalID: 1006309567
+      spriteID: d9828278495a7d247931e3b3d7ffeb92
+      internalID: -1744300262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Areia_8
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 0
+        width: 438
+        height: 440
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29675d5e48661a54ab39126424d2c730
+      internalID: -233924495
       vertices: []
       indices: 
       edges: []
@@ -287,7 +308,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: a8927c5993d819b468b1f29fcd421e1b
+    spriteID: 39d2536c79aca9943b2dad18092e6d0a
     internalID: 0
     vertices: []
     indices: 
@@ -295,14 +316,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      sheetnpcs1_6: -1956601970
-      sheetnpcs1_2: 2077099476
-      sheetnpcs1_4: -2006594044
-      sheetnpcs1_5: -1918716819
-      sheetnpcs1_1: -2097013655
-      sheetnpcs1_0: -1325827660
-      sheetnpcs1_3: -1503747787
-      sheetnpcs1_7: 1006309567
+      Areia_4: -416600550
+      Areia_8: -233924495
+      Areia_0: 1294400639
+      Areia_5: 1579938839
+      Areia_7: -1744300262
+      Areia_3: -1641185396
+      Areia_6: 404733365
+      Areia_1: 1081943249
+      Areia_2: 229979985
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

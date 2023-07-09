@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ad5aac68e7290944c86e8269cab6358f, type: 3}
-  m_Name: Fish_SaltBae
+  m_Name: Fish_LadyGaga
   m_EditorClassIdentifier: 
   preyName: 
   preyCategory: 

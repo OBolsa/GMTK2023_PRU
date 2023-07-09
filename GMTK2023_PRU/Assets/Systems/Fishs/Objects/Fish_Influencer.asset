@@ -12,12 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad5aac68e7290944c86e8269cab6358f, type: 3}
   m_Name: Fish_Influencer
   m_EditorClassIdentifier: 
-  preyName: 
-  preyCategory: 
+  preyName: Influencer
+  preyCategory: Civillian
   preyDescription: 
   preyIcon: {fileID: 2077099476, guid: eae594a58ab5b4e42a581f3b26f26c02, type: 3}
   favoriteBait: {fileID: 0}
-  catchesAmount: 0
+  amountCatched: 0
+  amountCurrent: 999
   value: 0
   quickTimeEvent: {fileID: 11400000, guid: 2a31356d7def9424e98a9a2bb42d1a2c, type: 2}
   parameters:

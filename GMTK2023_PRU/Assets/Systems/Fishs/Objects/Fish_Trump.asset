@@ -17,7 +17,7 @@ MonoBehaviour:
   preyDescription: 
   preyIcon: {fileID: -932576453, guid: 5fbe2df71a073c74b9d8ad43e5aa356d, type: 3}
   favoriteBait: {fileID: 11400000, guid: 61a3ea2bfdd6b3544ab7875e5f9600cb, type: 2}
-  amountCatched: 0
+  amountCatched: 1
   amountCurrent: 999
   value: 0
   quickTimeEvent: {fileID: 11400000, guid: 71784852a7e99da4c8b52e29e8302ff4, type: 2}

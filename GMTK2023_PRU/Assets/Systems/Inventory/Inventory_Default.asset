@@ -13,5 +13,19 @@ MonoBehaviour:
   m_Name: Inventory_Default
   m_EditorClassIdentifier: 
   items:
+  - itemInSlot: {fileID: 11400000, guid: 8eae4d181d0e21143b1ca5256b9063bd, type: 2}
+    quantity: 120
+  - itemInSlot: {fileID: 11400000, guid: 5359cdbd4d9e2694dbe89898568936c6, type: 2}
+    quantity: 120
+  - itemInSlot: {fileID: 11400000, guid: b5134d2f403cd1d4685c063d1c0f9f0b, type: 2}
+    quantity: 120
   - itemInSlot: {fileID: 11400000, guid: 796abc9d7ffe56e499b80d36ccb16384, type: 2}
+    quantity: 120
+  - itemInSlot: {fileID: 11400000, guid: 87f3c4420236b0a4e97a8f5d7a59c14f, type: 2}
+    quantity: 120
+  - itemInSlot: {fileID: 11400000, guid: 2d3e0f496bef68c40ad18ef93148e1da, type: 2}
+    quantity: 120
+  - itemInSlot: {fileID: 11400000, guid: 92991c734c5efae479f948c697e10587, type: 2}
+    quantity: 120
+  - itemInSlot: {fileID: 11400000, guid: 61a3ea2bfdd6b3544ab7875e5f9600cb, type: 2}
     quantity: 120

@@ -8,17 +8,18 @@ using TMPro;
 
 public class UiInventoryItem : UiElement
 {
-    [SerializeField] Menu_Inventory menuInventory;
+    Menu_Inventory menuInventory;
+    [SerializeField] Item associatedItem;
     [SerializeField] TextMeshProUGUI textQty;
 
-    private void Init(Menu_Inventory menu)
+    public void Init(Menu_Inventory menu, Item item)
     {
         menuInventory = menu;
-        button.onClick.AddListener(SelectItem);
+        associatedItem = item;
     }
-
-    private void SelectItem()
+    protected override void Click()
     {
-        menuInventory.UpdateSelectedItem();
+        base.Click();
+        menuInventory.UpdateSelectedItem(associatedItem);
     }
 }

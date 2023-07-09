@@ -37,8 +37,8 @@ public class Menu_Shop: BaseMenu
     {
         foreach (var item in sellables)
         {
-            sellables.Remove(item);
-            Destroy(item);
+           // sellables.Remove(item);
+            Destroy(item.gameObject);
         }
 
         sellables.Clear();

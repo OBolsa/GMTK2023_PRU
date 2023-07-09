@@ -55,3 +55,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 421c95cf00f62f2459ec00e8edaf03a1, type: 2}
   - {fileID: 11400000, guid: 5644995661d85c44cb73ecb55a7952ea, type: 2}
   - {fileID: 11400000, guid: 4df6e4523b8062246922ccf9313ed21d, type: 2}
+  allAffinities:
+  - {fileID: 11400000, guid: 51e3411f170a0f34d98b84be59dd1864, type: 2}
+  - {fileID: 11400000, guid: 6d458e86e4d649d46a22f400ff59710f, type: 2}
+  - {fileID: 11400000, guid: 820a0058fd584ee45a51c60883c77e85, type: 2}
+  - {fileID: 11400000, guid: d274cd1cd5f919e43bc2d99f59dee367, type: 2}
+  - {fileID: 11400000, guid: 706224d3d52e89d448b69ba56a3fc8e4, type: 2}
+  - {fileID: 11400000, guid: f311a4262d16d454a8b9b7a4e896dc83, type: 2}

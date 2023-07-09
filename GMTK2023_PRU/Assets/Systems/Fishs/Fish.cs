@@ -30,8 +30,9 @@ public class Fish : ScriptableObject
 }
 
 [System.Serializable]
-public struct BaitAffinityEntry
+public class BaitAffinityEntry
 {
     public BaitAffinity affinity;
     public BaitAffinityAmount typeOfAffinity;
+
 }

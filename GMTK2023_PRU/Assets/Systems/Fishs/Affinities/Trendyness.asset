@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1a37dd6d756ff14598494472d21013c, type: 3}
   m_Name: Trendyness
   m_EditorClassIdentifier: 
-  affinityName: 
-  color: {r: 1, g: 1, b: 1, a: 0}
-  icon: {fileID: 0}
+  affinityName: Trendyness
+  color: {r: 0.5882353, g: 0.5882353, b: 1, a: 1}
+  icon: {fileID: 21300000, guid: a04ecc9d5e12d5d449077414eb86635e, type: 3}

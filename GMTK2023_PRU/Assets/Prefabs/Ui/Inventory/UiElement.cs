@@ -5,22 +5,13 @@ using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using DG.Tweening;
 
-public class UiElement : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
+public class UiElement : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     [SerializeField] protected Button button;
 
     private void Start()
     {
         button.onClick.AddListener(Click);
-    }
-    public void OnPointerDown(PointerEventData eventData)
-    {
-        CursorOver(true);
-    }
-
-    public void OnPointerUp(PointerEventData eventData)
-    {
-        CursorOver(false);
     }
 
     protected virtual void Click()
@@ -30,5 +21,15 @@ public class UiElement : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 
     protected virtual void CursorOver(bool selected)
     {
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        CursorOver(false);
+    }
+
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        CursorOver(true);
     }
 }

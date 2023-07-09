@@ -6,7 +6,7 @@ using TMPro;
 
 public class UiAtribute : MonoBehaviour
 {
-    private BaitAffinity affinity;
+    public BaitAffinity affinity;
     [SerializeField] private Image icon;
     [SerializeField] private TextMeshProUGUI title;
     [SerializeField] private Image fill;
@@ -30,20 +30,22 @@ public class UiAtribute : MonoBehaviour
             return;
         }
 
+        float ratio = 0;
         switch (entry.typeOfAffinity)
         {
             case BaitAffinityAmount.Low:
-                fill.fillAmount = .33f;
+                ratio = .33f;
                 break;
             case BaitAffinityAmount.Medium:
-                fill.fillAmount = .66f;
+                ratio = .66f;
                 break;
             case BaitAffinityAmount.High:
-                fill.fillAmount = 1;
+                ratio = 1;
                 break;
         }
+        fill.fillAmount = ratio;
 
-        fill.color = affinity.color * valueGradient.Evaluate(fill.fillAmount);
+        fill.color = affinity.color * valueGradient.Evaluate(ratio);
     }
 
 }

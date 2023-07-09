@@ -13,9 +13,5 @@ MonoBehaviour:
   m_Name: Inventory_Default
   m_EditorClassIdentifier: 
   items:
-  - itemInSlot: {fileID: 11400000, guid: f33dc750e8e22b2419b76a7fd1314f46, type: 2}
-    quantity: 10
-  - itemInSlot: {fileID: 11400000, guid: f3c46c14bb6a7524c92129f416736420, type: 2}
-    quantity: 10
-  - itemInSlot: {fileID: 11400000, guid: 7f59a3263edb959449c155d079f84a31, type: 2}
-    quantity: 10
+  - itemInSlot: {fileID: 11400000, guid: 796abc9d7ffe56e499b80d36ccb16384, type: 2}
+    quantity: 120

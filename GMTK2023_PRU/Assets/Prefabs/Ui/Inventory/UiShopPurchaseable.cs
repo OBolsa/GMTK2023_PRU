@@ -13,6 +13,7 @@ public class UiShopPurchaseable : UiElement
     [SerializeField] float cost;
     [SerializeField] TextMeshProUGUI textCost;
 
+
     public void Init(Menu_Shop shop)
     {
         menuShop = shop;
@@ -30,7 +31,7 @@ public class UiShopPurchaseable : UiElement
         base.CursorOver(selected);
 
         if(selected)
-            menuShop.CursorOverPurchaseable(cost);
+            menuShop.CursorOverPurchaseable(-cost);
         else
             menuShop.CursorOverPurchaseable(0);
     }

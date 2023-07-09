@@ -11,18 +11,7 @@ public class Inventory : ScriptableObject
         items.Clear();
     }
     */
-    public int GetItemQuantity(Item item)
-    {
-        var count = 0;
 
-        foreach (var slots in items)
-        {
-            if(slots.itemInSlot = item)
-                count++;
-        }
-
-        return count;
-    }
     public void AddItem(Item item, int quantity)
     {
         InventorySlot slot = items.Find(a => a.itemInSlot == item);

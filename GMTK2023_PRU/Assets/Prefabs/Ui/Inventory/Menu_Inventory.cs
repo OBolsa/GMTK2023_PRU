@@ -20,9 +20,12 @@ public class Menu_Inventory : BaseMenu
     [SerializeField] TextMeshProUGUI descQty;
     List<UiInventoryItem> uiItems = new List<UiInventoryItem>();
     [Header("Bait")]
+    [SerializeField] TextMeshProUGUI textPower;
+    [SerializeField] TextMeshProUGUI textAllure;
     [SerializeField] List<UiAtribute> uiAffinities = new List<UiAtribute>();
     [SerializeField] GameObject keyBaitTransform;
     [SerializeField] Image keyBaitTargetImage;
+    [SerializeField] TextMeshProUGUI keyBaitTargetName;
 
 
     public override void Init()
@@ -52,13 +55,10 @@ public class Menu_Inventory : BaseMenu
 
         uiItems.Clear();
 
-        foreach (var item in GameplayManager.instance.ScriptableManager.allItems)
+        foreach (var item in GameplayManager.instance.ScriptableManager.playerInventory.items)
         {
-            if (GameplayManager.instance.ScriptableManager.playerInventory.GetItemQuantity(item) <= 0)
-                continue;
-
             var newItem = Instantiate(prefabItem, itemTransform);
-            newItem.Init(this, item);
+            newItem.Init(this, item.itemInSlot);
             uiItems.Add(newItem);
         }
     }
@@ -83,7 +83,9 @@ public class Menu_Inventory : BaseMenu
         descTitle.text = item.itemName;
         descCategory.text = item.category;
         descDescription.text = item.itemDescription;
-        descQty.text = GameplayManager.instance.ScriptableManager.playerInventory.GetItemQuantity(item).ToString();
+        descQty.text = GameplayManager.instance.ScriptableManager.playerInventory.items.Find(it => it.itemInSlot == item).quantity.ToString();
+        textPower.text = item.parameters.Power.ToString();       
+        textAllure.text = item.parameters.Attractiveness.ToString();
     }
 
     private void UpdateKeyBaitStatus(Item item)
@@ -99,11 +101,12 @@ public class Menu_Inventory : BaseMenu
                 show = true;
                 endCatchable = catchable;
                 keyBaitTargetImage.sprite = catchable.preyIcon;
+                keyBaitTargetName.text = catchable.amountCatched > 0 ? catchable.preyName : "?????";
+                keyBaitTargetImage.color = catchable.amountCatched > 0 ? Color.white : Color.black;
                 break;
             }
         }
 
-        keyBaitTargetImage.color = show ? Color.white : Color.black;
         keyBaitTransform.SetActive(show);
 
     }
@@ -111,10 +114,13 @@ public class Menu_Inventory : BaseMenu
     {
         for (int i = 0; i < uiAffinities.Count; i++)
         {
-            var currentAffinity = GameplayManager.instance.ScriptableManager.allAffinities[i];
-
-            BaitAffinityEntry affinity = item.affinities.Find(a => a.affinity == uiAffinities[i]);
-
+            BaitAffinityEntry affinity = item.affinities.Find(a => a.affinity == uiAffinities[i].affinity);
+            /*
+            if(affinity != null)
+                Debug.Log(affinity.affinity);
+            else
+                Debug.Log("No affinity for" + uiAffinities[i].affinity);
+            */
             uiAffinities[i].UpdateValues(affinity);
 
         }

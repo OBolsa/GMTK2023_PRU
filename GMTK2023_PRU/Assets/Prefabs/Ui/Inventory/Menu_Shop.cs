@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
 using TMPro;
+using System;
 
 public class Menu_Shop: BaseMenu
 {
@@ -19,18 +20,29 @@ public class Menu_Shop: BaseMenu
     [SerializeField] TextMeshProUGUI saleValueText;
     [SerializeField] GameObject symbolPlus;
     [SerializeField] GameObject symbolMinus;
+    [SerializeField] List<UiShopPurchaseable> purchaseables = new List<UiShopPurchaseable> ();
     [SerializeField] List<UiShopSellable> sellables = new List<UiShopSellable> ();
 
     public override void Init()
     {
         //instantiate sellables
         UpdateSellables();
+        UpdatePurchaseables();
     }
 
     public override void OpenCloseMenu(bool open)
     {
         base.OpenCloseMenu(open);
         Init();
+    }
+
+    private void UpdatePurchaseables()
+    {
+        foreach (var item in purchaseables)
+        {
+            item.Init(this);
+        }
+
     }
 
     public void UpdateSellables()
@@ -62,21 +74,25 @@ public class Menu_Shop: BaseMenu
 
     public void CursorOverSellable(Fish sellable)
     {
-        CursorOverItem(sellable, sellable.value);
+        if(sellable)
+            CursorOverItem(sellable, sellable.value);
+        else
+            CursorOverItem(false, 0);
     }
 
     public void CursorOverItem(bool isValid, float value)
     {
         if (!isValid)
-            saleValueRect.DOScale(0, .25f).SetEase(Ease.InBounce).SetUpdate(true);
+            saleValueRect.DOScale(0, .25f).SetEase(Ease.OutBack).SetUpdate(true);
         else
         {
             saleValueRect.localScale = Vector3.zero;
-            saleValueRect.DOScale(1, .25f).SetEase(Ease.OutBounce).SetUpdate(true);
+            saleValueRect.DOScale(1, .25f).SetEase(Ease.OutBack).SetUpdate(true);
         }
 
         symbolPlus.SetActive(value > 0);
         symbolMinus.SetActive(value < 0);
+        saleValueText.text = Mathf.Abs(value).ToString();
     }
 
     public bool AttemptPurchase(float value)
@@ -89,6 +105,7 @@ public class Menu_Shop: BaseMenu
 
         currentFood -= value;
         PurchaseSuccess();
+        foodValueText.text = currentFood.ToString();
         return true;
     }
     public void SellSellable(Fish sellable)

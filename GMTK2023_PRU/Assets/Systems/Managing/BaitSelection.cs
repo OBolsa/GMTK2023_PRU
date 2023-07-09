@@ -7,7 +7,7 @@ using DG.Tweening;
 
 public class BaitSelection : MonoBehaviour
 {
-    [SerializeField] Item currentBait;
+    public Item currentBait;
     private bool menuOpen;
     [SerializeField] RectTransform rectSelf;
 

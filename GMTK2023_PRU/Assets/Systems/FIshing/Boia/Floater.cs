@@ -55,8 +55,6 @@ public class Floater : DynamicItem, IInteractable
 
         areaRelated.gameObject.SetActive(true);
 
-        FollowPoint.Instance.SetTarget(transform);
-        FollowPoint.Instance.StartFollow();
 
         StartFloater();
     }
@@ -75,8 +73,6 @@ public class Floater : DynamicItem, IInteractable
 
         areaRelated.gameObject.SetActive(false);
 
-        FollowPoint.Instance.SetTarget(player.transform);
-        FollowPoint.Instance.StartFollow();
     }
 
     private void Update()

@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88cf12be2a347434eb156b9ced31490c, type: 3}
+  m_Name: QTE_Nerd
+  m_EditorClassIdentifier: 
+  Events:
+  - range: {x: 8.76, y: 19.697645}
+  - range: {x: 79.97109, y: 92.10109}
+  - range: {x: 119.56996, y: 126.81996}
+  - range: {x: 156.36441, y: 164.86441}
+  - range: {x: 202.9777, y: 314.03772}

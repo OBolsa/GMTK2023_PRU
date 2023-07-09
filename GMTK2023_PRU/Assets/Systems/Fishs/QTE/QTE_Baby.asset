@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88cf12be2a347434eb156b9ced31490c, type: 3}
+  m_Name: QTE_Baby
+  m_EditorClassIdentifier: 
+  Events:
+  - range: {x: 8.755573, y: 84.26999}
+  - range: {x: 122.65, y: 147.9089}
+  - range: {x: 169.91002, y: 188.1}
+  - range: {x: 206.71333, y: 231.63333}
+  - range: {x: 238, y: 349.05554}

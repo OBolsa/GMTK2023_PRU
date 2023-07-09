@@ -18,6 +18,16 @@ public class NearbyToolTips : MonoBehaviour
 
             HUD.Instance.InteractionBox.SetActive(nearbyToolTip.toolTip.isInteractable);
             nearbyToolTip.toolTip.OpenToolTip();
+
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                IInteractable interactable = nearbyToolTip as IInteractable;
+
+                if(interactable != null)
+                {
+                    interactable.DoInteraction();
+                }
+            }
         }
     }
 

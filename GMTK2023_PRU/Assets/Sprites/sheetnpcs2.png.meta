@@ -105,7 +105,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Food Deliverer_0
+      name: Sheetnpcs2_FoodDeliverer_0
       rect:
         serializedVersion: 2
         x: 0
@@ -126,7 +126,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DeepSeaDiver_1
+      name: Sheetnpcs2_DeepSeaDiver_1
       rect:
         serializedVersion: 2
         x: 654
@@ -147,7 +147,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sheetnpcs2_2
+      name: Sheetnpcs2_Engineer_2
       rect:
         serializedVersion: 2
         x: 1308
@@ -168,7 +168,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Researcher_3
+      name: Sheetnpcs2_Researcher_3
       rect:
         serializedVersion: 2
         x: 1962
@@ -189,7 +189,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LadyGaga_4
+      name: Sheetnpcs2_LadyGaga_4
       rect:
         serializedVersion: 2
         x: 0
@@ -210,7 +210,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BelleBelinha2_5
+      name: Sheetnpcs2_BelleBelinha2_5
       rect:
         serializedVersion: 2
         x: 654
@@ -231,7 +231,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Trump_6
+      name: Sheetnpcs2_Trump_6
       rect:
         serializedVersion: 2
         x: 1308
@@ -252,7 +252,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agente69_7
+      name: Sheetnpcs2_Agente69_7
       rect:
         serializedVersion: 2
         x: 1962
@@ -283,14 +283,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Researcher_3: -1588336875
-      sheetnpcs2_2: 1447244130
-      Food Deliverer_0: -2059047172
-      DeepSeaDiver_1: 780684722
-      BelleBelinha2_5: -353884119
-      Agente69_7: 1117857422
-      Trump_6: -932576453
-      LadyGaga_4: 1128477551
+      Sheetnpcs2_Agente69_7: 1117857422
+      Sheetnpcs2_BelleBelinha2_5: -353884119
+      Sheetnpcs2_Trump_6: -932576453
+      Sheetnpcs2_Researcher_3: -1588336875
+      Sheetnpcs2_FoodDeliverer_0: 780684722
+      Sheetnpcs2_Engineer_2: -1588336875
+      Sheetnpcs2_LadyGaga_4: 1128477551
+      Sheetnpcs2_DeepSeaDiver_1: 1447244130
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

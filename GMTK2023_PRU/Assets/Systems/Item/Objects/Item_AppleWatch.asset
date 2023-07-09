@@ -10,17 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 67215c136af972247bf296c49200a936, type: 3}
-  m_Name: Item_Chessboard
+  m_Name: Item_AppleWatch
   m_EditorClassIdentifier: 
   itemName: 
-  itemSprite: {fileID: 0}
+  category: 
+  itemDescription: 
+  itemIcon: {fileID: 0}
   parameters:
     Power: 0
-    Attractiveness: 0
+    Attractiveness: 0.9
   affinities:
-    taste: 0
-    fun: 0
-    trendyness: 0
-    technology: 0
-    knowledge: 0
-    value: 0
+  - affinity: {fileID: 11400000, guid: 820a0058fd584ee45a51c60883c77e85, type: 2}
+    typeOfAffinity: 7
+  - affinity: {fileID: 11400000, guid: d274cd1cd5f919e43bc2d99f59dee367, type: 2}
+    typeOfAffinity: 7
+  - affinity: {fileID: 11400000, guid: f311a4262d16d454a8b9b7a4e896dc83, type: 2}
+    typeOfAffinity: 3

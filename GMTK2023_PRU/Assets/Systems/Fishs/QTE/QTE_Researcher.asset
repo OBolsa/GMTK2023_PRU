@@ -9,18 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67215c136af972247bf296c49200a936, type: 3}
-  m_Name: Item_WalkTalk
+  m_Script: {fileID: 11500000, guid: 88cf12be2a347434eb156b9ced31490c, type: 3}
+  m_Name: QTE_Researcher
   m_EditorClassIdentifier: 
-  itemName: 
-  itemSprite: {fileID: 0}
-  parameters:
-    Power: 0
-    Attractiveness: 0
-  affinities:
-    taste: 0
-    fun: 0
-    trendyness: 0
-    technology: 0
-    knowledge: 0
-    value: 0
+  Events:
+  - range: {x: 34.4329, y: 105.81}
+  - range: {x: 175.47903, y: 190.95905}
+  - range: {x: 240.89, y: 360}

@@ -9,18 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67215c136af972247bf296c49200a936, type: 3}
-  m_Name: Item_Kindle
+  m_Script: {fileID: 11500000, guid: 88cf12be2a347434eb156b9ced31490c, type: 3}
+  m_Name: QTE_DeepSeaDiver
   m_EditorClassIdentifier: 
-  itemName: 
-  itemSprite: {fileID: 0}
-  parameters:
-    Power: 0
-    Attractiveness: 0
-  affinities:
-    taste: 0
-    fun: 0
-    trendyness: 0
-    technology: 0
-    knowledge: 0
-    value: 0
+  Events:
+  - range: {x: 61.935486, y: 151.36548}
+  - range: {x: 233.14291, y: 291.6129}

@@ -13,14 +13,16 @@ MonoBehaviour:
   m_Name: Item_CanOfBeans
   m_EditorClassIdentifier: 
   itemName: Can of Beans
-  itemSprite: {fileID: 21300000, guid: ce684d6eccc74d9428a078c7de23c06e, type: 3}
+  category: 
+  itemDescription: 
+  itemIcon: {fileID: 0}
   parameters:
     Power: 0
-    Attractiveness: 0
+    Attractiveness: 0.7
   affinities:
-    taste: 7
-    fun: 0
-    trendyness: 0
-    technology: 0
-    knowledge: 0
-    value: 0
+  - affinity: {fileID: 11400000, guid: 51e3411f170a0f34d98b84be59dd1864, type: 2}
+    typeOfAffinity: 7
+  - affinity: {fileID: 11400000, guid: 706224d3d52e89d448b69ba56a3fc8e4, type: 2}
+    typeOfAffinity: 3
+  - affinity: {fileID: 11400000, guid: f311a4262d16d454a8b9b7a4e896dc83, type: 2}
+    typeOfAffinity: 3

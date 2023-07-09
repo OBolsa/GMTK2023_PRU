@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Item_AppleWatch
   m_EditorClassIdentifier: 
   itemName: 
-  category: 
+  category: Beach
   itemDescription: 
   itemIcon: {fileID: 0}
   parameters:

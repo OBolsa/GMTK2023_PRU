@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67215c136af972247bf296c49200a936, type: 3}
   m_Name: Item_OldPolaroid
   m_EditorClassIdentifier: 
-  itemName: 
-  category: 
+  itemName: Old Polaroid
+  category: Sewage Grate
   itemDescription: 
   itemIcon: {fileID: 0}
   parameters:

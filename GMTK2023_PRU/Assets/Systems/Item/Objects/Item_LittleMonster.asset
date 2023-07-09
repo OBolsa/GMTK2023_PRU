@@ -15,7 +15,7 @@ MonoBehaviour:
   itemName: Little Monter
   category: Beach
   itemDescription: 
-  itemIcon: {fileID: 0}
+  itemIcon: {fileID: -1577514625, guid: 474db92a238678049b40a0602865775d, type: 3}
   parameters:
     Power: 0
     Attractiveness: 0.1

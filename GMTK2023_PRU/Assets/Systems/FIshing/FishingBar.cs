@@ -61,6 +61,24 @@ public class FishingBar : MonoBehaviour
         }
 
         MovePointer();
+
+        if(barStep >= 100)
+        {
+            // Win Fish Feedback
+
+            // CollectFish
+            transform.parent.gameObject.SetActive(false); // Close the `Pesca` shit
+            FishingSpot spot = NearbySpots.nearbyFishingSpot as FishingSpot;
+            spot.DeleteSpot();
+        }
+        else
+        {
+            // Lose Fish Feedback
+
+            transform.parent.gameObject.SetActive(false); // Close the `Pesca` shit
+            FishingSpot spot = NearbySpots.nearbyFishingSpot as FishingSpot;
+            spot.DeleteSpot();
+        }
     }
 
     private void UpdateDecreaseBar()

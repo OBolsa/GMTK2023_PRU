@@ -36,6 +36,7 @@ public class FishingSpot : DynamicItem, IInteractable
         isAttatched = true;
 
         SortCatch();
+        GameplayManager.instance.ScriptableManager.playerInventory.RemoveItem(bait, 1); // Remove the bait from the player inventory
     }
 
     private void StopBaitSelection()

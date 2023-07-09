@@ -6,6 +6,8 @@ public class Floater : DynamicItem, IInteractable
     public Rigidbody2D rb;
     public SpriteRenderer spriteRenderer;
     public FishingSpotArea areaRelated;
+    public Fishing disco;
+    public GameObject pesca;
 
     [Header("Configs")]
     public string floaterName = "Floater";
@@ -55,8 +57,10 @@ public class Floater : DynamicItem, IInteractable
 
         areaRelated.gameObject.SetActive(true);
 
-
         StartFloater();
+        FishingSpot spot = NearbySpots.nearbyFishingSpot as FishingSpot;
+        disco.preyFishing = spot.sortedFish;
+        pesca.gameObject.SetActive(true);
     }
 
     public void DetachToTheFLoater()
@@ -72,7 +76,7 @@ public class Floater : DynamicItem, IInteractable
         spriteRenderer.sprite = defaultSprite;
 
         areaRelated.gameObject.SetActive(false);
-
+        pesca.gameObject.SetActive(false);
     }
 
     private void Update()

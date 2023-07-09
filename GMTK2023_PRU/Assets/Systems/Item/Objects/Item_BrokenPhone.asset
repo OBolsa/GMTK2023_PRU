@@ -15,7 +15,7 @@ MonoBehaviour:
   itemName: Broken Phone
   category: Sewage Grate
   itemDescription: 
-  itemIcon: {fileID: 0}
+  itemIcon: {fileID: 326687756, guid: 474db92a238678049b40a0602865775d, type: 3}
   parameters:
     Power: 0
     Attractiveness: 1

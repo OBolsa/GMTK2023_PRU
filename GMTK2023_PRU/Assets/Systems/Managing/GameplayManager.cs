@@ -6,6 +6,7 @@ public class GameplayManager : MonoBehaviour
 {
     public static GameplayManager instance;
     public ScriptableManager ScriptableManager;
+    public BaitSelection BaitSelection;
 
     private void Awake()
     {

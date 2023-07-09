@@ -19,7 +19,7 @@ MonoBehaviour:
   favoriteBait: {fileID: 11400000, guid: 92991c734c5efae479f948c697e10587, type: 2}
   amountCatched: 0
   amountCurrent: 999
-  value: 0
+  value: 10
   quickTimeEvent: {fileID: 11400000, guid: 8126f7ffd2446ee4e8530fca0cf27734, type: 2}
   parameters:
     Difficulty: 17

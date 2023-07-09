@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Item_Ball
   m_EditorClassIdentifier: 
   itemName: Ball
-  category: 
+  category: Beach
   itemDescription: 
-  itemIcon: {fileID: 21300000, guid: 1daa326d782fcad4c8311b435b51762e, type: 3}
+  itemIcon: {fileID: 21300000, guid: cd558ccb3af04844492f1221b8f9a7c9, type: 3}
   parameters:
     Power: 0
     Attractiveness: 0

@@ -15,7 +15,7 @@ MonoBehaviour:
   itemName: Barbie Doll
   category: Beach
   itemDescription: 
-  itemIcon: {fileID: 0}
+  itemIcon: {fileID: 1873107824, guid: 474db92a238678049b40a0602865775d, type: 3}
   parameters:
     Power: 0
     Attractiveness: 0.5
@@ -26,5 +26,3 @@ MonoBehaviour:
     typeOfAffinity: 1
   - affinity: {fileID: 11400000, guid: f311a4262d16d454a8b9b7a4e896dc83, type: 2}
     typeOfAffinity: 7
-  - affinity: {fileID: 0}
-    typeOfAffinity: 0

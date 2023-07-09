@@ -26,12 +26,16 @@ public class FishingSpot : DynamicItem, IInteractable
 
     private void StartBaitSelection()
     {
+        bait = GameplayManager.instance.BaitSelection.currentBait;
+
         myArea.myFloater.StopFloater();
 
         toolTip.CloseToolTip();
         toolTip.enabled = false;
         toolTip.canShowTooltip = false;
         isAttatched = true;
+
+        SortCatch();
     }
 
     private void StopBaitSelection()

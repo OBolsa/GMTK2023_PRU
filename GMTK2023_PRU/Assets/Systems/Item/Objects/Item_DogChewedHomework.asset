@@ -15,7 +15,7 @@ MonoBehaviour:
   itemName: Dog-Chewed Homework
   category: Sewage Grate
   itemDescription: 
-  itemIcon: {fileID: 0}
+  itemIcon: {fileID: 336085920, guid: 474db92a238678049b40a0602865775d, type: 3}
   parameters:
     Power: 0
     Attractiveness: 1.1

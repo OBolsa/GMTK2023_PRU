@@ -19,16 +19,4 @@ MonoBehaviour:
   parameters:
     Power: 0
     Attractiveness: 0
-  affinities:
-  - affinity: {fileID: 0}
-    typeOfAffinity: 0
-  - affinity: {fileID: 0}
-    typeOfAffinity: 0
-  - affinity: {fileID: 0}
-    typeOfAffinity: 0
-  - affinity: {fileID: 11400000, guid: 6d458e86e4d649d46a22f400ff59710f, type: 2}
-    typeOfAffinity: 0
-  - affinity: {fileID: 0}
-    typeOfAffinity: 0
-  - affinity: {fileID: 0}
-    typeOfAffinity: 0
+  affinities: []

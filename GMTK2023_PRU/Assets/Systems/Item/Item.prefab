@@ -103,6 +103,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   offset: {x: 0, y: 0, z: 0}
   isInteractable: 1
+  canShowTooltip: 1
+  canvas: {fileID: 0}
+  tooltipElements: {fileID: 0}
   itemText: {fileID: 0}
 --- !u!1 &666742347416681193
 GameObject:
@@ -177,7 +180,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 1daa326d782fcad4c8311b435b51762e, type: 3}
+  m_Sprite: {fileID: 1873107824, guid: 474db92a238678049b40a0602865775d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

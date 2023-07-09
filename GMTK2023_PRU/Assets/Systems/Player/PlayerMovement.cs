@@ -13,26 +13,12 @@ public class PlayerMovement : MonoBehaviour
     {
         DoPlayerMovement();
 
-        if(rb.velocity.magnitude > 0.1f)
-            playerRenderer.flipX = rb.velocity.x < 0;
-
-        if (inputVelocity.magnitude > 0.1f)
+        if (rb.velocity.magnitude > 0.1f)
         {
             DoPlayerRotation();
-        }
-        else
-        {
-            DoPlayerTurnBackToRotation();
-        }
-    }
 
-    private void DoPlayerTurnBackToRotation()
-    {
-        Vector2 direction = Vector2.right;
-        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-        Quaternion targetRotation = Quaternion.AngleAxis(angle, Vector3.forward);
-
-        transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, movementConfigs.rotationSpeed * 0.2f * Time.deltaTime);
+            playerRenderer.flipX = rb.velocity.x < 0;
+        }
     }
 
     private void DoPlayerMovement()
@@ -40,17 +26,22 @@ public class PlayerMovement : MonoBehaviour
         inputVelocity.x = Input.GetAxisRaw("Horizontal");
         inputVelocity.y = Input.GetAxisRaw("Vertical");
 
-        rb.velocity = Vector2.ClampMagnitude(rb.velocity + movementConfigs.impulseSpeed * Time.deltaTime * inputVelocity, movementConfigs.maxMovementSpeed);
+        Vector2 currentSpeed = rb.velocity;
+        Vector2 newSpeed = rb.velocity + ((inputVelocity * movementConfigs.impulseSpeed) * Time.deltaTime);
+
+        if (newSpeed.magnitude > movementConfigs.maxMovementSpeed) newSpeed = newSpeed.normalized * movementConfigs.maxMovementSpeed;
+
+        rb.velocity = newSpeed;
     }
 
     private void DoPlayerRotation()
     {
-        Vector2 direction = rb.velocity;
+        Vector2 direction = rb.velocity.normalized;
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         Quaternion targetRotation = Quaternion.AngleAxis(angle, Vector3.forward);
 
         targetRotation *= Quaternion.Euler(0f, 0f, -90f);
-        
-            transform.rotation = targetRotation;
+
+        transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, movementConfigs.rotationSpeed);
     }
 }

@@ -4,11 +4,17 @@ using UnityEngine;
 
 public class InventoryHolder : MonoBehaviour
 {
-    public static InventoryHolder Instance;
     public Inventory inventory;
 
-    private void Awake()
+    private void Update()
     {
-        Instance = this;
+        GameItem nearbyItem = NearbyToolTips.nearbyToolTip as GameItem;
+
+        if (nearbyItem != null && Input.GetKeyDown(KeyCode.E))
+        {
+            inventory.AddItem(nearbyItem.item, 1);
+            ItemManager.Instance.ReturnItem(nearbyItem);
+            nearbyItem.gameObject.SetActive(false);
+        }
     }
 }

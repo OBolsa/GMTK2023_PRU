@@ -7,27 +7,31 @@ public class ToolTip : MonoBehaviour
     public Vector3 offset;
     public bool isInteractable;
     private bool isActive;
-    public bool canShowTooltip = true;
 
-    public CanvasGroup canvas;
-    public ToolTipElement tooltipElements;
-    public TMP_Text itemText;
+    [HideInInspector] public TMP_Text itemText;
+    private ToolTipElement tooltip;
+
+    private void Awake()
+    {
+        tooltip = GetComponentInChildren<ToolTipElement>(true);
+        itemText = GetComponentInChildren<TMP_Text>(true);
+    }
 
     private void Update()
     {
-        if (tooltipElements.gameObject.activeSelf)
+        if (tooltip.gameObject.activeSelf)
         {
-            Vector3 toolTipPosition = tooltipElements.transform.position;
+            Vector3 toolTipPosition = tooltip.transform.position;
             Vector3 worldPosition = Camera.main.WorldToScreenPoint(transform.position + offset);
 
             if (!isActive)
             {
-                tooltipElements.transform.position = worldPosition;
+                tooltip.transform.position = worldPosition;
                 isActive = true;
             }
             else
             {
-                tooltipElements.transform.position = Vector3.Slerp(toolTipPosition, worldPosition, 0.1f);
+                tooltip.transform.position = Vector3.Slerp(toolTipPosition, worldPosition, 0.1f);
             }
         }
     }
@@ -36,17 +40,12 @@ public class ToolTip : MonoBehaviour
 
     public void OpenToolTip()
     {
-        if (canShowTooltip)
-        {
-            canvas.alpha = 1;
-        }
-        else
-            CloseToolTip();
+        tooltip.gameObject.SetActive(true);
     }
 
     public void CloseToolTip()
     {
-        canvas.alpha = 0;
+        tooltip.gameObject.SetActive(false);
         isActive = false;
     }
 }

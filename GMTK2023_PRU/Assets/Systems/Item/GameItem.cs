@@ -13,9 +13,7 @@ public class GameItem : DynamicItem, IInteractable
   
     public void DoInteraction()
     {
-        InventoryHolder.Instance.inventory.AddItem(item, 1);
-        ItemManager.Instance.ReturnItem(this);
-        gameObject.SetActive(false);
+        throw new System.NotImplementedException();
     }
 
     private void OnEnable()

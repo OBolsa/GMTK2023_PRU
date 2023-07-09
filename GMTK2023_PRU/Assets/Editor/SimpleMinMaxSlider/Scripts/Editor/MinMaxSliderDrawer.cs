@@ -1,6 +1,4 @@
-﻿#if UNITY_EDITOR
-
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEditor;
 using GD.MinMaxSlider;
 
@@ -107,6 +105,4 @@ public class MinMaxSliderDrawer : PropertyDrawer {
 
     }
     
-}
-
-#endif
+} 

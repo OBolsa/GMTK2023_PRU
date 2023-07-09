@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Item_SoggyPizza
   m_EditorClassIdentifier: 
   itemName: Soggy Pizza
-  category: 
+  category: Downtown River
   itemDescription: 
   itemIcon: {fileID: 0}
   parameters:

@@ -15,7 +15,7 @@ MonoBehaviour:
   preyName: 
   preyCategory: 
   preyDescription: 
-  preyIcon: {fileID: 0}
+  preyIcon: {fileID: -1325827660, guid: eae594a58ab5b4e42a581f3b26f26c02, type: 3}
   favoriteBait: {fileID: 0}
   catchesAmount: 0
   value: 0

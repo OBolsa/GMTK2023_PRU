@@ -15,11 +15,11 @@ MonoBehaviour:
   preyName: 
   preyCategory: 
   preyDescription: 
-  preyIcon: {fileID: 0}
+  preyIcon: {fileID: -1588336875, guid: 5fbe2df71a073c74b9d8ad43e5aa356d, type: 3}
   favoriteBait: {fileID: 0}
   catchesAmount: 0
   value: 0
-  quickTimeEvent: {fileID: 0}
+  quickTimeEvent: {fileID: 11400000, guid: bfcf0f464f427da4eb1c45b5a84d86dc, type: 2}
   parameters:
     Difficulty: 30
     Resistance: 27

@@ -13,14 +13,10 @@ MonoBehaviour:
   m_Name: Item_LittleMonster
   m_EditorClassIdentifier: 
   itemName: 
-  itemSprite: {fileID: 0}
+  category: 
+  itemDescription: 
+  itemIcon: {fileID: 0}
   parameters:
     Power: 0
-    Attractiveness: 0
-  affinities:
-    taste: 0
-    fun: 0
-    trendyness: 0
-    technology: 0
-    knowledge: 0
-    value: 0
+    Attractiveness: 0.1
+  affinities: []

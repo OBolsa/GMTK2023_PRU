@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Events:
   - range: {x: 8.76, y: 19.697645}
-  - range: {x: 71.99113, y: 112.58112}
-  - range: {x: 177.5723, y: 193.5723}
-  - range: {x: 245.01561, y: 294.0056}
+  - range: {x: 71.99, y: 81.93549}
+  - range: {x: 109.71, y: 118.048874}
+  - range: {x: 202.34, y: 215.21326}
   - range: {x: 327.74673, y: 340.30673}

@@ -71,7 +71,7 @@ public class FishingBar : MonoBehaviour
             FishingSpot spot = NearbySpots.nearbyFishingSpot as FishingSpot;
             spot.DeleteSpot();
         }
-        else
+        else if (barStep <= 0)
         {
             // Lose Fish Feedback
 

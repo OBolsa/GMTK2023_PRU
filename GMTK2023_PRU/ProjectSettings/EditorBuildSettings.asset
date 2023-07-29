@@ -6,9 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/ShaderTest.unity
-    guid: 27c8801e9f7ff7748aa39d2a7224f248
+    path: Assets/Scenes/MainMenu.unity
+    guid: 6960d615cc8e73649ac1ca4f6cb40b2c
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 0
+    path: Assets/Scenes/ShaderTest.unity
+    guid: 27c8801e9f7ff7748aa39d2a7224f248
   m_configObjects: {}
